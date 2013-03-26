@@ -23,7 +23,7 @@ module VestalVersions
     end
 
     class ForceYAML
-      YAML::ENGINE.yamler='syck'      
+      YAML::ENGINE.yamler='syck' if defined?(YAML::ENGINE)      
       def self.load(text)
         return if text.blank?
         YAML::load(text)
