@@ -43,7 +43,6 @@ module VestalVersions
   autoload :Reversion
   autoload :Users
   autoload :Version
-  autoload :VERSION, 'vestal_versions/version_num'
   autoload :VersionTagging
   autoload :Versioned
   autoload :Versions
